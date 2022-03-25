@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+    <script src="./js/fetchPost.js" defer></script>
+    <style>
+        .alert {
+            background-color: white;
+            position: fixed;
+            text-align: center;
+            top: 10%;
+            width: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 7px 0;
+            border-radius: 5px;
+            border: 1px solid green;
+            color: green;
+        }
+
+        .alert.danger {
+            color: tomato;
+            border-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Create post</h1>
+    <form>
+        <input type="text" name="title" placeholder="Title" />
+        <textarea name="body" cols="30" rows="4" placeholder="Enter text"></textarea>
+        <input type="hidden" name="userId" value="5" />
+        <button>Create</button>
+    </form>
+</body>
+
+</html>
